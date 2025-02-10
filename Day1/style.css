@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    background-color: blanchedalmond;
   }
 
   .login {
@@ -8,5 +9,15 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-color: #f2f2f2;
+    background-color: blanchedalmond;
+  }
+
+  .login-img {
+    border: 5px solid rgb(249, 188, 123);
+    width: 100%
+  }
+
+  button {
+    background-color: chartreuse;
+    border-radius: 80px;
   }
