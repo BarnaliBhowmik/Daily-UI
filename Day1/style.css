@@ -21,3 +21,36 @@ body {
     background-color: chartreuse;
     border-radius: 80px;
   }
+
+  .btn-custom {
+    background-color: #3da528; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem; /* Default padding */
+    font-size: 1rem; /* Default font size */
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto; /* Auto width for normal screens */
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .btn-custom {
+        width: 100%; /* Full width on tablets and smaller screens */
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-custom {
+        font-size: 0.8rem;
+        padding: 0.7rem 1.5rem;
+    }
+}
