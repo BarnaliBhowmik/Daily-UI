@@ -8,6 +8,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      document.getElementById("signupForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+    
+        if (name.length < 20) {
+          document.getElementById("message").innerText = "Name must be at least 20 characters long.";
+          return;
+        }
+        if (password.length < 6) {
+          document.getElementById("message").innerText = "Password must be at least 6 characters long.";
+          return;
+        }
+    
+        alert("Sign-up successful!");
+      });
+    </script>
 </head>
 <body>
     <div class="card" style="width: 18rem;">
@@ -19,6 +38,6 @@
             <button class="btn btn-primary" onclick="location.href='login.html'" >SIGN-UP / LOGIN</button>
           </div>
         </div>
-      </div>
+    </div>
 </body>
 </html>
