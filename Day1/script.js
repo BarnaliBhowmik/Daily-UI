@@ -4,8 +4,8 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
     
-    if (name.length < 3) {
-        document.getElementById("message").innerText = "Name must be at least 3 characters long.";
+    if (name.length < 20) {
+        document.getElementById("message").innerText = "Name must be at least 20 characters long.";
         return;
     }
     if (password.length < 6) {
