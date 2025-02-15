@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.profile-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+}
+
+.name {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.tagline {
+    color: gray;
+    font-size: 14px;
+}
+
+.profile-content {
+    margin-top: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.links a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.linkedin { background: #0077B5; color: white; }
+.github { background: #333; color: white; }
+.website { background: #ff9900; color: white; }
+.instagram { background: #E1306C; color: white; }
+.twitter { background: #1DA1F2; color: white; }
+
+button {
+    margin-top: 15px;
+    padding: 8px 12px;
+    border: none;
+    background: #0077B5;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005f8a;
+}
